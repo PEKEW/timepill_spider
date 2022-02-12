@@ -1,0 +1,50 @@
+body{
+    background-image: url('source/back.png');
+}
+
+.form-div {
+    height: 300px;
+    width: 330px;
+    position: absolute;
+    top: 250px;
+    left: 20px;
+-webkit-box-shadow:rgb(110, 110, 110) -2px -2px 8px 1px inset;
+-moz-box-shadow:rgb(110, 110, 110) -2px -2px 8px 1px inset;
+box-shadow:rgb(110, 110, 110) -2px -2px 8px 1px inset;
+-webkit-border-radius:16px;
+-moz-border-radius:16px;
+border-radius:16px;
+padding:5px;
+
+}
+h1 { color:rgb(5, 135, 206);
+    font-family:Zapfino,sans-serif;
+    font-size:66px;
+    text-align:center;
+    margin:40px 0px 0px 0px;
+     }
+
+
+button{
+color:rgb(255, 255, 255) !important;
+background-color:rgba(0, 170, 255, 0.7);
+}
+
+.bar{
+    font-family:\u5FAE\u8F6F\u96C5\u9ED1,\u9ED1\u4F53,sans-serif;
+    font-size:24px;
+    width:310px;
+    height:52px;
+    line-height:49px;
+    opacity:1;
+    color:rgb(0, 0, 0);
+    border-width:0px;
+    -webkit-border-radius:10px;
+    -moz-border-radius:10px;
+    border-radius:10px;
+    -webkit-mask-image:-webkit-linear-gradient(0deg, rgb(0, 0, 0) 0%, rgba(34, 255, 0, 0.31) 100%);
+    -webkit-box-shadow:rgb(36, 5, 5) 0px 0px 7px 1px inset;
+    -moz-box-shadow:rgb(36, 5, 5) 0px 0px 7px 1px inset;
+    box-shadow:rgb(36, 5, 5) 0px 0px 7px 1px inset;
+    margin:35px 0px 0px 9px;
+}

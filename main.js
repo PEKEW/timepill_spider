@@ -9,8 +9,11 @@
       width: 800,
       height: 600,
       webPreferences: {
-        nodeIntegration: true
-      }
+        nodeIntegration: true,
+        contextIsolation: false,
+      },
+      frame: false,
+      resizable: false,
     })
   
     // 加载模版

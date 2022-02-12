@@ -3,14 +3,24 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <style>
+      @import url(theme.css);
+    </style>
     <meta charset="UTF-8">
     <!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
-    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'">
-    <meta http-equiv="X-Content-Security-Policy" content="default-src 'self'; script-src 'self'">
-  </head>
+    <!-- <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'">
+    <meta http-equiv="X-Content-Security-Policy" content="default-src 'self'; script-src 'self'"> -->
+</head>
   <body>
-    <h1>Hello World!</h1>
-   
+    <h1>Time Spider</h1>
+    <div class = "form-div">
+      <form>
+          <input type="text" name = "user" class = "bar">
+          <input type="password" name = "pwd" class = "bar">
+        <button class="bar" id = "btn">登陆胶囊</button>
+      </form>
+    </div>
+  <script>window.$ = window.jQuery = require('jquery');</script>
   <script src="./external.js"></script>
   </body>
 </html>
