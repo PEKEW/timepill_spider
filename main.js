@@ -1,4 +1,4 @@
-  
+ 
   // 引入模块
   const { app, BrowserWindow } = require('electron')
   
@@ -11,9 +11,7 @@
       webPreferences: {
         nodeIntegration: true,
         contextIsolation: false,
-      },
-      frame: false,
-      resizable: false,
+      }
     })
   
     // 加载模版
@@ -41,3 +39,25 @@
         if (BrowserWindow.getAllWindows().length === 0) createWindow()
       })
   })
+
+  const ipc = require('electron').ipcMain;
+
+  ipc.on('new_win', (e, arg) => {
+
+    // 创建子页面
+    var main_new_win = new BrowserWindow({
+      width: 800,
+      height: 600,
+      webPreferences: {
+        nodeIntegration: true,
+        contextIsolation: false,
+      }
+    })
+    main_new_win.on('ready-to-show', function () {
+        main_new_win.webContents.send('data',arg.data); // 发送消息
+    })
+
+    main_new_win.loadFile('login.html');
+    // main_new_win.webContents.openDevTools()
+    // main_new_win.on('closed', () => { main_new_win = null })
+})
